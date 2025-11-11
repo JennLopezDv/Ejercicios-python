@@ -1,0 +1,7 @@
+Condicionales: 
+Tipos de datos: int, boolean, string, float ...
+Estructuras de datos: 
+ *Listas
+
+
+
