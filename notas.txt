@@ -3,5 +3,8 @@ Tipos de datos: int, boolean, string, float ...
 Estructuras de datos: 
  *Listas
 
+Link reporitorio de ejercicios:
+https://github.com/orimarselasirg/buclesAndFunction/blob/main/M1S2/Ejercicios_Funciones_avanzadas.md
+
 
 
