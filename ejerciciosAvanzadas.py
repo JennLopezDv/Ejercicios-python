@@ -216,10 +216,71 @@ Medio (1000–3000 km): 1000 millas
 Largo (> 3000 km): 2000 millas
 Debe repetirse hasta que el usuario escriba “fin” y mostrar el total acumulado."""
 
+# def calcular_millas(viajes):
+#     millas_corta = 500
+#     millas_media = 1000
+#     millas_larga = 2000
+    
+#     if viajes >= 1:  
+#         total = 0
+         
+#         for i in range(1, viajes+1):
+#             distancia = input("Ingrese distancia en km: ")
+#             if distancia.lower() == 'fin':
+#                 print("Saliendo...")
+#                 break
+#             if distancia.isdigit():
+#                 distancia = float(distancia)    
+#                 if distancia > 3000:                
+#                     print(f"Acomulo: {millas_larga} millas")
+#                     total += millas_larga
+#                 elif distancia > 1000 and distancia < 3000:
+#                     print(f"Acomulo: {millas_media} millas")
+#                     total += millas_media
+#                 else:
+#                     print(f"Acomulo: {millas_corta} millas")
+#                     total += millas_corta
+
+#         print(f"Su total es {total}")
+            
+#     else: 
+#         print("Valor inválido, ingrese opción nuevamente: ")
+    
+
+            
+# numero_viajes = int(input("Ingrese número de viajes: "))        
+# calcular_millas(numero_viajes)
+
+
 """12. Hospital “Salud Total” – Evaluador de signos vitales
 Como médico, quiero una función evaluar_paciente() que reciba frecuencia cardiaca y temperatura corporal.
 Si ambos valores están fuera del rango normal (FC > 100 o Temp > 38), mostrar “Paciente en observación”.
 Repetir el proceso con varios pacientes en un bucle while."""
+
+def evaluar_paciente(a, b):
+    
+    if a > 100 or b > 38:
+        return "Paciente en observación."
+    else:
+        return "Ta bien, que se vaya"
+
+
+cantidad = int(input("Ingrese la cantidad de pacientes: "))
+for i in range(1, cantidad+1):
+    print(f"Paciente {i}")
+    frecuencia_cardiaca = int(input("Ingrese frecuencia cardiaca: "))
+    temperatura_corporal = int(input("Ingrese temperatura corporal: "))
+    print(f"Resultados del paciente {i}: {evaluar_paciente(frecuencia_cardiaca, temperatura_corporal)}")
+    
+
+    
+    
+
+
+
+
+
+
 
 """13. Tienda Online “ShopMaster” – Carrito de compras con validaciones
 Como comprador, quiero una función carrito() que permita ingresar precios de productos y valide:
